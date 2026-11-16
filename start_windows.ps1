@@ -10,6 +10,16 @@ param(
 )
 $ErrorActionPreference = 'Stop'
 
+if (-not $ConfigPath) { $ConfigPath = Join-Path $PSScriptRoot 'config.local.json' }
+elseif (-not [IO.Path]::IsPathRooted($ConfigPath)) { $ConfigPath = Join-Path $PSScriptRoot $ConfigPath }
+if (-not (Test-Path -LiteralPath $ConfigPath)) {
+    if ([IO.Path]::GetFullPath($ConfigPath) -ne [IO.Path]::GetFullPath((Join-Path $PSScriptRoot 'config.local.json'))) {
+        throw "Configuration file not found: $ConfigPath"
+    }
+    Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'config.example.json') -Destination $ConfigPath
+    Write-Host 'Created config.local.json. Edit it for your portal before using Auto login.'
+}
+
 if ($ConfigPath) {
     $config = Get-Content -LiteralPath $ConfigPath -Raw | ConvertFrom-Json
     $allowedKeys = @('PORTAL_URL', 'PORTAL_ALLOWED_HOSTS', 'PORTAL_TEST_URL',

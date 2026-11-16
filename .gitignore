@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 config.local.json
+.runtime/
+.downloads/
+.repair-backups/

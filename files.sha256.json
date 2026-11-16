@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "debd02f83a15117a94fee693f7583a4766bb78739886e60e81116edbf8583e11"
+    },
+    {
+      "path": "README_TH.md",
+      "sha256": "292a4fb8afb64b59c8b890a752f51bf59f90df23bd63b0830681e0044c57f073"
+    },
+    {
+      "path": "config.example.json",
+      "sha256": "e2d5c14e56fa10e94ee3f9c3cfdeae0f37d5b0a9e195336fa73313b3a6214382"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "13bc00b9b09e3925dbd615969d7c7374d7953ea0bf481d510530cc1ac45e3ab4"
+    },
+    {
+      "path": "start_windows.ps1",
+      "sha256": "62818ce57f036a29271ec6736b58b80a7aebc3614f9c61409d33d59209bd7eb8"
+    },
+    {
+      "path": "install_windows.ps1",
+      "sha256": "f55b6817bae3308d7b7a2ca16d249790a9bcb0eaa694ef6fbca7b46137fff8cb"
+    },
+    {
+      "path": "windows/auto_login.py",
+      "sha256": "72b17c1229ea00c4dc972f1b939bcf177c2918aa071c45c31ed8dda9cfb99d44"
+    },
+    {
+      "path": "windows/wifi_portal_monitor.ps1",
+      "sha256": "5a54fedd0d63f2568d8c3be8b1f0748dca55b390699c435e9b527c908c9a6596"
+    },
+    {
+      "path": "windows/esp32_server.py",
+      "sha256": "0a337c4907887f95c71f0b53027fd0f3cfc8ee7cdffdb39ff479e336f7f5a94c"
+    },
+    {
+      "path": "esp32/esp32_test/esp32_test.ino",
+      "sha256": "8430b2d9f832110025fd45919303e0231e967ccc0db53313644b1f635d41ae5c"
+    }
+  ]
+}
