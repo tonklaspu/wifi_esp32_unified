@@ -1,0 +1,6 @@
+{
+  "PORTAL_URL": "http://1.1.1.2/",
+  "PORTAL_ALLOWED_HOSTS": "1.1.1.2",
+  "PORTAL_TEST_URL": "http://www.msftconnecttest.com/connecttest.txt",
+  "PORTAL_TEST_EXPECTED": "Microsoft Connect Test"
+}
